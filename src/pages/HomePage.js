@@ -22,7 +22,7 @@ function HomePage() {
     axios.get(`http://localhost:7500/user/${user.user._id}`).then((res) => {
       setUser(res.data.res);
     });
-  }, [u]);
+  }, [user]);
   return (
     <>
       <div className="text-center">

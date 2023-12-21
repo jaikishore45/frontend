@@ -4,7 +4,7 @@ import { authContext } from "../hooks/authContext";
 import axios from "axios";
 
 function Signup() {
-  const { user, dispatch } = useContext(authContext);
+  const { user} = useContext(authContext);
   const navigate = useNavigate();
 
   const [error, setError] = useState("");
